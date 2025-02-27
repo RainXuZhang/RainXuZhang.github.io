@@ -1,7 +1,103 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<title>Index</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hub</title>
+    <link rel="stylesheet" href="style1.css" type="text/css">
 </head>
+
 <body>
-<h1>Index</h1>
+    <header>
+        <p><big><big><big><b>
+                            <h1>
+                                <div>&lt;The Hub&gt;</div>
+                            </h1>
+                        </b></big></big></big></p>
+        <p>
+        <h3>
+            <div>Curated Information For You</div>
+        </h3>
+        </p>
+    </header>
+    <div class="content">
+        <div class="tabs">
+            <div class="tab-header">
+                <div class="tab-link active" data-tab="tab-1">Home</div>
+                <div class="tab-link" data-tab="tab-2">Links</div>
+                <div class="tab-link" data-tab="tab-3">Profiles</div>
+                <div class="tab-link" data-tab="tab-4">Staff</div>
+                <div class="tab-link" data-tab="tab-5">About</div>
+            </div>
+            <div class="tab-content active" id="tab-1">
+                <p>
+                <h2>Home</h2>
+                </p>
+                <p>Welcome to Rain's Server!</p>
+                <p>Here you can find information, activities, and projects that I'm working on.</p>
+                <p>Feel free to explore the other tabs.</p>
+            </div>
+            <div class="tab-content" id="tab-2">
+                <p>
+                <h2>Activity Hub</h2>
+                </p>
+                <p>Here you can find various activities, like games, articles, and puzzles.</p>
+                <p>Click on the buttons below to access the activities.</p>
+                <h3>Games</h3>
+                <ul>
+                    <li><a href="https://arras.io"><button>arras.io</button></a></li>
+                </ul>
+            </div>
+            <div class="tab-content" id="tab-3">
+                <h2>Profiles</h2>
+                <p>My GitHub: <a href=https://github.com/RainXuZhang><button>GitHub</button></a></p>
+            </div>
+            <div class="tab-content" id="tab-4">
+                <h2>Staff</h2>
+                Lead Developer:
+                <ul>
+                    <li>Rain Xu Zhang (rainxuzhang@gmail.com)</li>
+                </ul>
+                Contributors:
+                <ul>
+                    <li>John Huan Zhang (ztmusic@gmail.com)</li>
+                    <li>Cindy Xu Zhang (xtmusic@gmail.com)</li>
+                    <li>Sunny Xu Zhang (sunnyxuzhang@gmail.com)</li>
+                </ul>
+            </div>
+            <div class="tab-content" id="tab-5">
+                <h2>About</h2>
+                Made using:
+                <ul>
+                    <li>Apache HTTP Server</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Visual Studio Code</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Support me on GoFundMe: <a href='https://gofund.me/cf5b3d55'><button>GoFundMe</button></a></p>
+        </p>
+    </footer>
+
+    <script>
+        const tabLinks = document.querySelectorAll('.tab-link');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                tabLinks.forEach(item => item.classList.remove('active'));
+                tabContents.forEach(item => item.classList.remove('active'));
+
+                link.classList.add('active');
+                document.getElementById(link.getAttribute('data-tab')).classList.add('active');
+            });
+        });
+    </script>
 </body>
+
+</html>
