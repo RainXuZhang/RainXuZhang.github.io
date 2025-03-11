@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Head -->
 <head>
     <!-- Meta Tags -->
     <meta charset="UTF-8">
@@ -92,13 +93,13 @@
         </p>
     </footer>
 
-    <script>
-        const tabLinks = document.querySelectorAll('.tab-link');
-        const tabContents = document.querySelectorAll('.tab-content');
-
-        tabLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                tabLinks.forEach(item => item.classList.remove('active'));
+<!-- JavaScript -->
+<script>
+    const tabLinks = document.querySelectorAll('.tab-link');
+    const tabContents = document.querySelectorAll('.tab-content');
+    tabLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            tabLinks.forEach(item => item.classList.remove('active'));
                 tabContents.forEach(item => item.classList.remove('active'));
 
                 link.classList.add('active');
@@ -107,7 +108,7 @@
         });
     </script>
 </body>
-    <!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1GSMZ9NY9Z"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
