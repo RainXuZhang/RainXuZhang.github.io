@@ -77,3 +77,6 @@ button:hover {
 background-color: #575757;
 cursor: default;
 }
+.imagelink {
+    font-family: Arial, sans-serif;
+}
