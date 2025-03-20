@@ -77,7 +77,7 @@ button:hover {
 background-color: #575757;
 cursor: default;
 }
-.imagelink {
+button.imagelink {
     font-family: Arial, sans-serif;
 }
 input[type=button], input[type=submit], input[type=reset] {
