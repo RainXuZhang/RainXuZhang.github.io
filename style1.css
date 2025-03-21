@@ -83,7 +83,7 @@ button.imagelink {
 input[type=button], input[type=submit], input[type=reset] {
     background-color: #535353;
     border: none;
-    border-radius: 4px;
+    border-radius: 2px;
     padding: 6px 12px;
     text-align: center;
     text-decoration: none;
