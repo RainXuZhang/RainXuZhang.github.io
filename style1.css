@@ -90,3 +90,7 @@ input[type=button], input[type=submit], input[type=reset] {
     display: inline-block;
     font-size: 16px;
 }
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+    background-color: #575757;
+    cursor: default;
+}
