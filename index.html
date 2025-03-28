@@ -17,6 +17,7 @@
     <!-- Links -->
     <link rel="stylesheet" href="style1.css" type="text/css">
     <link rel="shortcut icon" type="image/x-icon" href="homepage.png"/>
+    <script src="javascript.js"></script>
 </head>
 
 <!-- Body -->
@@ -97,30 +98,5 @@
     <footer>
         <p>Changelog: <a href=changelog.html target="_blank"><button>Changelog</button></a></p>
     </footer>
-
-<!-- JavaScript -->
-<script>
-    const tabLinks = document.querySelectorAll('.tab-link');
-    const tabContents = document.querySelectorAll('.tab-content');
-    tabLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            tabLinks.forEach(item => item.classList.remove('active'));
-                tabContents.forEach(item => item.classList.remove('active'));
-
-                link.classList.add('active');
-                document.getElementById(link.getAttribute('data-tab')).classList.add('active');
-            });
-        });
-    </script>
 </body>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1GSMZ9NY9Z"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-1GSMZ9NY9Z');
-</script>
-
 </html>
