@@ -85,7 +85,6 @@
                 <ul>
                     <li>Rain Xu Zhang <a href=mailto:rainxuzhang@gmail.com><button>Email Me</button></a></li>
 	            </ul>
-                <p>Support me: <a href="https://gofund.me/da72ec84" target="_blank"><button>Help me get a laptop</button></a></p></li>
             </div>
             <div class="tab-content" id="tab-5">
                 <p><h2>About</h2></p>
@@ -102,6 +101,7 @@
                 <p><a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html#SEC1" target="_blank"><button>GNU General License v2.0</button></a></p>
                 <h2>Source Code:</h2>
                 <p><a href="https://github.com/RainXuZhang/RainXuZhang.github.io" target="_blank"><button>Github</button></a></p>
+                <p>Page last modified: <span id="lastModified"></span></p>
             </div>
         </div>
     </div>
@@ -109,6 +109,7 @@
         <a href=changelog.html target="_blank"><button>Changelog</button></a>
     </footer>
 
+<!-- Tab JS -->
 <script>
 const tabLinks = document.querySelectorAll('.tab-link');
 const tabContents = document.querySelectorAll('.tab-content');
@@ -122,6 +123,12 @@ tabLinks.forEach(link => {
     });
 });
 </script>
+
+<!-- Last time modified JS -->
+<script>
+    document.getElementById("lastModified").textContent = document.lastModified;
+</script>
+
 <noscript>
     <hr width="40%">
     <h2><b><div align="center" style="color:rgb(0, 0, 0)">Java is disabled in your browser or it's not supported. Tabs will not work.</div></b></h2>
