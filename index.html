@@ -110,29 +110,16 @@
     </footer>
 
 <!-- Tab JS -->
-<script>
-const tabLinks = document.querySelectorAll('.tab-link');
-const tabContents = document.querySelectorAll('.tab-content');
-tabLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        tabLinks.forEach(item => item.classList.remove('active'));
-        tabContents.forEach(item => item.classList.remove('active'));
+<script src="tabs.js"></script>
 
-        link.classList.add('active');
-        document.getElementById(link.getAttribute('data-tab')).classList.add('active');
-    });
-});
-</script>
-
-<!-- Last time modified JS -->
-<script>
-    document.getElementById("lastModified").textContent = document.lastModified;
-</script>
+<!-- Last modified JS -->
+<script src="lastmod.js"></script>
 
 <noscript>
     <hr width="40%">
     <h2><b><div align="center" style="color:rgb(0, 0, 0)">Java is disabled in your browser or it's not supported. Tabs will not work.</div></b></h2>
     <hr width="40%">
 </noscript>
+
 </body>
 </html>
