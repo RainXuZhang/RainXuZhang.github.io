@@ -1,2 +1,4 @@
 AddType text/html .shtml .html 
 AddHandler server-parsed .shtml .html
+Options +ExecCGI
+AddHandler cgi-script .sh
