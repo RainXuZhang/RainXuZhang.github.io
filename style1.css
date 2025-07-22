@@ -72,9 +72,10 @@ text-align: center;
 text-decoration: none;
 display: inline-block;
 font-size: 16px;
+transition: background 0.3s, border-bottom 0.3s;
 }
 button:hover {
-background-color: #575757;
+background-color: #a1a1a1;
 cursor: default;
 }
 button.imagelink {
@@ -91,6 +92,6 @@ input[type=button], input[type=submit], input[type=reset] {
     font-size: 16px;
 }
 input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
-    background-color: #575757;
+    background-color: #a1a1a1;
     cursor: default;
 }
